@@ -1,0 +1,8 @@
+# [Desktop Entry]
+# Type=Application
+# Name=Name Of Application
+# Comment=App Comment
+# Icon=/path/to/icon/image/file
+# Exec=/path/to/appimage
+# Terminal=false
+# Catagories=App Catagory
