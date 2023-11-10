@@ -1,3 +1,7 @@
 # Install packages from text file
 sudo xargs -a packages.txt xbps-install
+
 # btrfs can boot without grub
+
+# Bash Shell Prompt Changer
+# https://ezprompt.net/
