@@ -1,0 +1,2 @@
+# Install packages from text file
+xargs sudo xbps-install -S < packages.txt
