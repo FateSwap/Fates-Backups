@@ -5,3 +5,7 @@ sudo xargs -a packages.txt xbps-install
 
 # Bash Shell Prompt Changer
 # https://ezprompt.net/
+
+# Get rid of xfce completely
+sudo su -
+pacman -Sg xfce4 xfce4-goodies | awk '{print $2}' | xargs pacman -R --noconfirm libxfce4ui libxfcegui4
