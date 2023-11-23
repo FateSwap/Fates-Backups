@@ -9,3 +9,8 @@ sudo xargs -a packages.txt xbps-install
 # Get rid of xfce completely
 sudo su -
 pacman -Sg xfce4 xfce4-goodies | awk '{print $2}' | xargs pacman -R --noconfirm libxfce4ui libxfcegui4
+
+# make pacman faster
+sudo pacman -S reflector
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
