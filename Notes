@@ -14,3 +14,7 @@ pacman -Sg xfce4 xfce4-goodies | awk '{print $2}' | xargs pacman -R --noconfirm 
 sudo pacman -S reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+# to enable suspend on void
+# Use dbus AND acpid
+
