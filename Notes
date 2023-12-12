@@ -21,3 +21,7 @@ sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pa
 # emojis need
 sudo xbps-install noto-fonts-emoji unicode-emoji
 
+# FOR LAPTOP
+rename grub/refind/whatever the fuck to bootx64.efi and put in /boot/efi/EFI/boot/bootx64.efi
+
+https://unix.stackexchange.com/questions/360305/uefi-not-recognising-efi-partition-no-booting-options
