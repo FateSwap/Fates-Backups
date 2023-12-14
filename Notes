@@ -25,3 +25,6 @@ sudo xbps-install noto-fonts-emoji unicode-emoji
 rename grub/refind/whatever the fuck to bootx64.efi and put in /boot/efi/EFI/boot/bootx64.efi
 
 https://unix.stackexchange.com/questions/360305/uefi-not-recognising-efi-partition-no-booting-options
+
+# Video codecs in firefox, needs ffmpeg package
+sudo xbps-install ffmpeg
